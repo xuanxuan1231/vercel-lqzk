@@ -40,6 +40,7 @@ include 'header.php';
             &bull;
             <a href="<?php $options->registerUrl(); ?>"><?php _e('用户注册'); ?></a>
             <?php endif; ?>
+            <a href ="<?php GmLogin_Plugin::url('login'); //输出登陆url ?>"><?php _e('新登陆'); ?></a>
         </p>
     </div>
 </div>
