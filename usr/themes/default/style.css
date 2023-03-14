@@ -9,11 +9,19 @@
 /* ------------------
  * Global style
  * --------------- */
+ <style>
+@font-face {
+    font-family:Noto_Sans_CJK_SC_Regular;font-style:normal;font-display: swap;
+    src:url('https://github.com/xuanxuan1231/fonts/blob/main/NotoSansCJKsc-Regular.woff2') format('woff2'),
+        url('https://github.com/xuanxuan1231/fonts/blob/main/NotoSansCJKsc-Regular.woff') format('woff');
+}
+*{font-family:Noto_Sans_CJK_SC_Regular;}
+</style>
 body {
   background-color: #FFF;
   color: #444;
   /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei","Microsoft Yahei", serif;
+  font-family: "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei","Microsoft Yahei", serif, "Noto_Sans_CJK_SC_Regular";
   font-size: 87.5%;
 }
 
