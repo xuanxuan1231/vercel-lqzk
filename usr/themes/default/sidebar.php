@@ -50,7 +50,11 @@
                             (<?php $this->user->screenName(); ?>)</a></li>
                     <li><a href="<?php $this->options->logoutUrl(); ?>"><?php _e('退出'); ?></a></li>
                 <?php else: ?>
-                    <li class="last"><a href="<?php $this->options->adminUrl('login.php'); ?>"><?php _e('登录'); ?></a>
+                    <li class="last"><a href="<?php GmLogin_Plugin::url('login'); ?>"><?php _e('登录'); ?></a>
+                    </li>
+                    <li class="last"><a href="<?php GmLogin_Plugin::url('register'); ?>"><?php _e('注册'); ?></a>
+                    </li>
+                    <li class="last"><a href="<?php GmLogin_Plugin::url('forget'); ?>"><?php _e('找回密码'); ?></a>
                     </li>
                 <?php endif; ?>
                 <li><a href="<?php $this->options->feedUrl(); ?>"><?php _e('文章 RSS'); ?></a></li>
