@@ -4,7 +4,11 @@
         "runtime": "vercel-php@0.5.2"
       }
     },
-    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }]
+    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }],
+    "dependencies": {
+    "@libphp/amazon-linux-2-v81": "latest",
+    "@libphp/gd-v81": "latest"
+}
 
   }
   
